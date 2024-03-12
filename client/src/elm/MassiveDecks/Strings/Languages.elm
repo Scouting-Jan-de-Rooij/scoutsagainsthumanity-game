@@ -19,7 +19,7 @@ module MassiveDecks.Strings.Languages exposing
     , title
     )
 
-{-| The primary entry point to I18N for Massive Decks.
+{-| The primary entry point to I18N for Scouts Against Humanity.
 -}
 
 import Dict exposing (Dict)
@@ -28,16 +28,8 @@ import Html.Attributes as HtmlA
 import MassiveDecks.Card.Source.Model as Source
 import MassiveDecks.Model exposing (Shared)
 import MassiveDecks.Strings exposing (MdString(..))
-import MassiveDecks.Strings.Languages.De as DeLang
-import MassiveDecks.Strings.Languages.DeXInformal as DeXInformalLang
 import MassiveDecks.Strings.Languages.En as EnLang
-import MassiveDecks.Strings.Languages.Es as EsLang
-import MassiveDecks.Strings.Languages.Id as IdLang
-import MassiveDecks.Strings.Languages.It as ItLang
-import MassiveDecks.Strings.Languages.Ko as KoLang
 import MassiveDecks.Strings.Languages.Model exposing (..)
-import MassiveDecks.Strings.Languages.Pl as PlLang
-import MassiveDecks.Strings.Languages.PtBR as PtBRLang
 import MassiveDecks.Strings.Translation.Model as Translation
 import MassiveDecks.Util.Maybe as Maybe
 import MassiveDecks.Util.String as String
@@ -48,16 +40,7 @@ import Material.Attributes as Material
 -}
 languages : List Language
 languages =
-    [ En
-    , It
-    , PtBR
-    , De
-    , DeXInformal
-    , Pl
-    , Id
-    , Es
-    , Ko
-    ]
+    [ En ]
 
 
 {-| The IETF language tag for the language.
@@ -210,27 +193,3 @@ pack language =
     case language of
         En ->
             EnLang.pack
-
-        It ->
-            ItLang.pack
-
-        PtBR ->
-            PtBRLang.pack
-
-        De ->
-            DeLang.pack
-
-        DeXInformal ->
-            DeXInformalLang.pack
-
-        Pl ->
-            PlLang.pack
-
-        Id ->
-            IdLang.pack
-
-        Es ->
-            EsLang.pack
-
-        Ko ->
-            KoLang.pack

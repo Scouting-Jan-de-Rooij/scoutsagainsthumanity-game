@@ -49,7 +49,8 @@ nounMaybe n quantity =
 included in some form in the message.
 -}
 type MdString
-    = MassiveDecks -- The name of the game.
+    = MassiveDecks -- The name of the original game.
+    | ScoutsAgainstHumanity -- The name of this game.
     | Close -- Close a dialog window.
       -- Special
     | Noun { noun : Noun, quantity : Quantity } -- The given noun, described in the given quantity and context.
@@ -58,6 +59,7 @@ type MdString
     | ShortGameDescription -- A one-line description of the game.
     | WhatIsThis -- A title for a section describing the game.
     | GameDescription -- A long description of the game.
+    | GameAdjustmentsDescription -- A long description of the adjusted game.
     | NewGame -- The action of creating a new game. (Short, ideally one word).
     | NewGameDescription -- A description of starting a new game.
     | FindPublicGame -- The action of finding a public game to join. (Short, ideally one word).
@@ -69,9 +71,12 @@ type MdString
     | MDLogoDescription -- A description of the Massive Decks logo (e.g: for blind users).
     | RereadLogoDescription -- A description of the Reread Games logo (e.g: for blind users).
     | MDProject -- A description of the action of visiting the development project for Massive Decks.
+    | SAHProject -- A description of the action of visiting the development project for Scouts Against Humanity.
+    | SAHLogoDescription -- A description of the Scouts Against Humanity logo (e.g: for blind users).
     | License -- A description of the license the game is made available under.
     | DevelopedByReread -- A description of the fact that the game was developed by Reread.
     | RereadGames -- The name of "Reread Games" (https://www.rereadgames.com/).
+    | ScoutingJanDeRooij -- The name of "Scouting Jan de Rooij" (https://www.scoutingjanderooij.nl/).
     | NameLabel -- A label for a user name text field.
     | NameInUse -- An error indicating the name the user asked for is already in use and they should try another.
     | RejoinTitle -- A title for a list of games the user was previously in and might be able to rejoin.
@@ -376,8 +381,6 @@ type MdString
     | Error -- A title for a generic error (something having gone wrong).
     | ErrorHelp -- A message telling the user that an error has occurred and what to do.
     | ErrorHelpTitle -- A title saying something went wrong.
-    | ErrorCheckOutOfBand -- A message to check the twitter account for more information on the service's status.
-    | TwitterHandle -- A description of the twitter account.
     | ReportError -- The action to report an error with the application to a developer.
     | ReportErrorDescription -- A description of the action of reporting an error to a developer.
     | ReportErrorBody -- An explanation of how to report an error to the developer.

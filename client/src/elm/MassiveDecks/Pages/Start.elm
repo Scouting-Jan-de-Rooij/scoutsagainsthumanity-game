@@ -253,20 +253,14 @@ view shared model =
             [ Html.div [ HtmlA.class "logos" ]
                 [ Html.blankA
                     [ HtmlA.class "logo"
-                    , Strings.MDProject |> Lang.title shared
-                    , HtmlA.href "https://github.com/Lattyware/massivedecks"
+                    , Strings.SAHProject |> Lang.title shared
+                    , HtmlA.href "https://github.com/Scouting-Jan-de-Rooij/scoutsagainsthumanity-game"
                     ]
-                    [ Icon.massiveDecks |> Icon.styled [ Strings.MDLogoDescription |> Lang.alt shared ] |> Icon.view ]
-                , Html.blankA
-                    [ HtmlA.class "logo"
-                    , Strings.DevelopedByReread |> Lang.title shared
-                    , HtmlA.href "https://www.rereadgames.com/"
-                    ]
-                    [ Icon.rereadGames |> Icon.styled [ Strings.RereadLogoDescription |> Lang.alt shared ] |> Icon.view ]
+                    [ Icon.scoutsAgainstHumanity |> Icon.styled [ Strings.SAHLogoDescription |> Lang.alt shared ] |> Icon.view ]
                 ]
             , Html.p [ HtmlA.class "version" ]
                 [ Html.text "\""
-                , Strings.MassiveDecks |> Lang.html shared
+                , Strings.ScoutsAgainstHumanity |> Lang.html shared
                 , Html.text "\" "
                 , Strings.Version { clientVersion = Version.version, serverVersion = shared.serverVersion } |> Lang.html shared
                 ]
@@ -575,6 +569,7 @@ aboutContent shared =
     Html.div [ HtmlA.class "about" ]
         [ Html.h2 [] [ Strings.WhatIsThis |> html ]
         , Html.p [] [ Strings.GameDescription |> html ]
+        , Html.p [] [ Strings.GameAdjustmentsDescription |> html ]
         , Html.h2 [] [ Strings.Rules |> html ]
         , Html.p [] [ Strings.RulesHand |> html ]
         , Html.p [] [ Strings.RulesCzar |> html ]

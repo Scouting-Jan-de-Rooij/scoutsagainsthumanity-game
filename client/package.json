@@ -1,11 +1,11 @@
 {
   "name": "@massivedecks/client",
-  "description": "The game client for Massive Decks, a comedy party game.",
+  "description": "The game client for Scouts Against Humanity, a game for terrible scouts.",
   "version": "2.0.0",
-  "author": "Reread Games <team@rereadgames.com>",
+  "author": "Scouting Jan de Rooij <webmaster@scoutingjanderooij.nl>",
   "license": "AGPL-3.0-or-later",
   "private": true,
-  "repository": "github:Lattyware/massivedecks",
+  "repository": "github:Scouting-Jan-de-Rooij/scoutsagainsthumanity-game",
   "scripts": {
     "build": "npx webpack",
     "dev": "npx webpack serve --mode=development",

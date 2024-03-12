@@ -10,14 +10,6 @@ import MassiveDecks.Strings exposing (MdString)
 -}
 type Language
     = En
-    | It
-    | PtBR
-    | De
-    | DeXInformal
-    | Pl
-    | Id
-    | Es
-    | Ko
 
 
 {-| It makes sense to apply the language and pass around the function, so we give that a nice name.

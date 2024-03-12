@@ -548,7 +548,7 @@ languageSelector wrap shared =
             }
             (Lang.languages |> List.map (languageOption shared selected))
         )
-        [ Message.info Strings.MissingLanguage ]
+        [ ]
 
 
 languageOption : Shared -> Language -> Language -> Select.ItemModel Language msg

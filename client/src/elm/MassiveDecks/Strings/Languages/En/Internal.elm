@@ -13,6 +13,9 @@ translate _ mdString =
         MassiveDecks ->
             [ Text "Massive Decks" ]
 
+        ScoutsAgainstHumanity ->
+            [ Text "Scouts Against Humanity" ]
+
         Close ->
             [ Text "Close" ]
 
@@ -59,10 +62,10 @@ translate _ mdString =
                 ]
 
         ShortGameDescription ->
-            [ Text "A comedy party game." ]
+            [ Text "A game for terrible scouts." ]
 
         WhatIsThis ->
-            [ Text "What is ", ref MassiveDecks, Text "?" ]
+            [ Text "What is ", ref ScoutsAgainstHumanity, Text "?" ]
 
         GameDescription ->
             [ ref MassiveDecks
@@ -77,11 +80,26 @@ translate _ mdString =
             , Text "."
             ]
 
+        GameAdjustmentsDescription ->
+            [ ref ScoutsAgainstHumanity
+            , Text " is an adjusted version of "
+            , ref MassiveDecks
+            , Text ". It is a game for terrible scouts. A scout is always prepared (be prepared) and therefore now also with this digital variant "
+            , ref ScoutsAgainstHumanity
+            , Text ". Drawn up by the scouts with far too much free time and far too bad humor, from "
+            , ref ScoutingJanDeRooij
+            , Text ". The adjusted version of the game is open source under "
+            , ref License
+            , Text ", so you can help improve the game, access the source code, or just find out more at "
+            , ref SAHProject
+            , Text "."
+            ]
+
         NewGame ->
             [ Text "New" ]
 
         NewGameDescription ->
-            [ Text "Start a new game of ", ref MassiveDecks, Text "." ]
+            [ Text "Start a new game of ", ref ScoutsAgainstHumanity, Text "." ]
 
         FindPublicGame ->
             [ Text "Find" ]
@@ -99,15 +117,21 @@ translate _ mdString =
             [ Text "About" ]
 
         AboutTheGameDescription ->
-            [ Text "Find out about ", ref MassiveDecks, Text " and how it is developed." ]
+            [ Text "Find out about ", ref ScoutsAgainstHumanity, Text " and how it is developed." ]
 
         MDLogoDescription ->
             [ Text "A ", ref (noun Call 1), Text " and a ", ref (noun Response 1), Text " marked with an “M” and a “D”." ]
+
+        SAHLogoDescription ->
+            [ Text "A ", ref (noun Call 1), Text " and a ", ref (noun Response 1), Text " overlaid with the Fleur-de-lis." ]
 
         RereadLogoDescription ->
             [ Text "A book circled by a recycling arrow." ]
 
         MDProject ->
+            [ Text "the GitHub project" ]
+
+        SAHProject ->
             [ Text "the GitHub project" ]
 
         License ->
@@ -118,6 +142,9 @@ translate _ mdString =
 
         RereadGames ->
             [ Text "Reread Games" ]
+
+        ScoutingJanDeRooij ->
+            [ Text "Scouting Jan de Rooij" ]
 
         NameLabel ->
             [ Text "Your Name" ]
@@ -374,7 +401,7 @@ translate _ mdString =
 
         TranslationBeg ->
             [ Text "Help translate "
-            , ref MassiveDecks
+            , ref ScoutsAgainstHumanity
             , Text "!"
             ]
 
@@ -414,7 +441,7 @@ translate _ mdString =
 
         NotificationsBrowserPermissions ->
             [ Text "You will need to give permission for "
-            , ref MassiveDecks
+            , ref ScoutsAgainstHumanity
             , Text " to notify you. This will only be used while the game is open and while you have this enabled."
             ]
 
@@ -564,7 +591,7 @@ translate _ mdString =
                 [ [ Text "Your game code is "
                   , ref (GameCode { code = gameCode })
                   , Text ". Players can join the game by loading "
-                  , ref MassiveDecks
+                  , ref ScoutsAgainstHumanity
                   , Text " and entering that code"
                   ]
                 , extra
@@ -1189,12 +1216,6 @@ translate _ mdString =
 
         ErrorHelpTitle ->
             [ Text "Sorry, something went wrong." ]
-
-        ErrorCheckOutOfBand ->
-            [ Text "Please check ", ref TwitterHandle, Text " for updates and service status. The game server will go down for a short time when a new version is released, so if you see a recent update, try again in a few minutes." ]
-
-        TwitterHandle ->
-            [ Text "@Massive_Decks" ]
 
         ReportError ->
             [ Text "Report Bug" ]

@@ -7,7 +7,7 @@ import MassiveDecks.Strings as Strings
 
 methods : Maybe String -> Source.Methods msg
 methods name =
-    { name = \_ -> Strings.MassiveDecks
+    { name = \_ -> Strings.ScoutsAgainstHumanity
     , logo = \() -> Nothing
     , defaultDetails =
         \_ ->

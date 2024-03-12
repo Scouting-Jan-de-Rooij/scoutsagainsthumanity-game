@@ -1,11 +1,11 @@
 {
   "name": "@massivedecks/server",
-  "description": "The game server for Massive Decks, a comedy party game.",
+  "description": "The game server for Scouts Against Humanity, a game for terrible scouts.",
   "version": "2.0.0",
-  "author": "Reread Games <team@rereadgames.com>",
+  "author": "Scouting Jan de Rooij <webmaster@scoutingjanderooij.nl>",
   "license": "AGPL-3.0-or-later",
   "private": true,
-  "repository": "github:Lattyware/massivedecks",
+  "repository": "github:Scouting-Jan-de-Rooij/scoutsagainsthumanity-game",
   "engines": {
     "node": ">=18.0.0 <19.0.0"
   },

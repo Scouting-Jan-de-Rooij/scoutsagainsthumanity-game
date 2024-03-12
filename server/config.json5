@@ -29,7 +29,7 @@
       // Ids for decks in the order they will be presented to the user.
       // The game will look for these in the directory given by basePath above, and will expect them to have the
       // .deck.json5 extension.
-      decks: ["cah-base-en", "cah-base-ptbr"],
+      decks: ["cah-base-en"],
     },
 
     // Allows players to load decks from Many Decks.
@@ -55,19 +55,19 @@
   // There is no default name here as that is managed by the client.
   defaults: {
     rules: {
-      handSize: 10,
-      scoreLimit: 25,
+      handSize: 6,
+      scoreLimit: 15,
       houseRules: {
-        // packingHeat: {},
-        // reboot: { cost: 1 },
+        packingHeat: {},
+        reboot: { cost: 1 },
         // comedyWriter: { number: 300, exclusive: true },
         // rando: { number: 1 },
-        // neverHaveIEver: {},
+        neverHaveIEver: {},
         // happyEnding: {},
-        // winnersPick: {},
+        winnersPick: {},
       },
       stages: {
-        timeLimitMode: "Soft",
+        timeLimitMode: "Hard",
         starting: 30,
         playing: {
           duration: 60,
@@ -86,12 +86,12 @@
     public: false,
     audienceMode: false,
     decks: [
-      // {
-      //   // A built-in deck.
-      //   source: "BuiltIn",
-      //   // The id (filename without `.deck.json5`.
-      //   id: "cah-base-en",
-      // },
+      {
+        // A built-in deck.
+        source: "BuiltIn",
+        // The id (filename) without `.deck.json5`.
+        id: "cah-base-en",
+      },
       // {
       //   // A deck from JSON Against Humanity
       //   source: "JAH",
@@ -178,7 +178,7 @@
   adverts: {
     // Show a link to Many Decks for users to build their own decks.
     // Note this will only work if you have Many Decks set as a source.
-    manyDecks: true,
+    manyDecks: false,
     // Show a link to At The Party, Reread Games new game.
     atTheParty: false,
   },
@@ -187,7 +187,7 @@
   touchOnStart: null,
   // This will be overwritten by the environment variable MD_TOUCH_ON_START, if set.
 
-  // The version of Massive Decks.
+  // The version of Scouts Against Humanity.
   version: "dev",
   // This will be overwritten by the environment variable MD_VERSION, if set.
 }

@@ -19,6 +19,11 @@ massiveDecks =
     Definitions.massiveDecks |> Icon.present
 
 
+scoutsAgainstHumanity : Icon WithoutId
+scoutsAgainstHumanity =
+    Definitions.scoutsAgainstHumanity |> Icon.present
+
+
 minimalCardSize : Icon WithoutId
 minimalCardSize =
     Definitions.minimalCardSize |> Icon.present

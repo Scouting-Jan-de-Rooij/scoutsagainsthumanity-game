@@ -181,7 +181,7 @@
   touchOnStart: null,
   // This will be overwritten by the environment variable MD_TOUCH_ON_START, if set.
 
-  // The version of Massive Decks.
+  // The version of Scouts Against Humanity.
   version: "dev",
   // This will be overwritten by the environment variable MD_VERSION, if set.
 }

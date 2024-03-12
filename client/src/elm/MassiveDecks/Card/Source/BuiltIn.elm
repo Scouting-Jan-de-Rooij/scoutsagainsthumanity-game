@@ -190,4 +190,4 @@ tooltip id renderTooltip =
 
 logo : () -> Maybe (Html msg)
 logo () =
-    Icon.massiveDecks |> Icon.view |> Just
+    Icon.scoutsAgainstHumanity |> Icon.view |> Just

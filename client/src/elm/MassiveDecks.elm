@@ -356,7 +356,7 @@ view model =
             Overlay.view model.shared (Pages.toRoute model.page) model.errorOverlay
 
         defaultTitle =
-            Lang.string model.shared Strings.MassiveDecks
+            Lang.string model.shared Strings.ScoutsAgainstHumanity
 
         title =
             case model.page of

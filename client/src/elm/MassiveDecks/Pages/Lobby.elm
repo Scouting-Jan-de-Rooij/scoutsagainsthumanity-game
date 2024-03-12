@@ -697,8 +697,8 @@ lobbyMenu wrap shared menuState r s audienceMode user player game =
             ]
 
         mdMenuItems =
-            [ ContextMenu.link Icon.info Strings.AboutTheGame Strings.AboutTheGameDescription (Just "https://github.com/lattyware/massivedecks")
-            , ContextMenu.link Icon.bug Strings.ReportError Strings.ReportErrorDescription (Just "https://github.com/Lattyware/massivedecks/issues/new")
+            [ ContextMenu.link Icon.info Strings.AboutTheGame Strings.AboutTheGameDescription (Just "https://github.com/Scouting-Jan-de-Rooij/scoutsagainsthumanity-game")
+            , ContextMenu.link Icon.bug Strings.ReportError Strings.ReportErrorDescription (Just "https://github.com/Scouting-Jan-de-Rooij/scoutsagainsthumanity-game/issues/new")
             ]
 
         menuItems =

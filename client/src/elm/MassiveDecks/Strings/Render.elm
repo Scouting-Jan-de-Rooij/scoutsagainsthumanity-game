@@ -118,7 +118,7 @@ resultToHtml shared context result =
 
                 translationBeg =
                     Html.blankA
-                        [ HtmlA.href "https://github.com/Lattyware/massivedecks/wiki/Translation"
+                        [ HtmlA.href "https://github.com/Scouting-Jan-de-Rooij/scoutsagainsthumanity-game/wiki/Translation"
                         , Strings.TranslationBeg |> asString context |> HtmlA.title
                         ]
                         [ Icon.language |> Icon.view ]
@@ -224,14 +224,14 @@ enhanceHtml shared context mdString unenhanced =
         MDProject ->
             [ Html.blankA [ HtmlA.class "no-wrap", HtmlA.href "https://github.com/Lattyware/massivedecks" ] unenhanced ]
 
+        SAHProject ->
+            [ Html.blankA [ HtmlA.class "no-wrap", HtmlA.href "https://github.com/Scouting-Jan-de-Rooij/scoutsagainsthumanity-game" ] unenhanced ]
+
         License ->
-            [ Html.blankA [ HtmlA.href "https://github.com/Lattyware/massivedecks/blob/master/LICENSE" ] unenhanced ]
+            [ Html.blankA [ HtmlA.href "https://github.com/Scouting-Jan-de-Rooij/scoutsagainsthumanity-game/blob/master/LICENSE" ] unenhanced ]
 
         TranslationBeg ->
-            [ Html.blankA [ HtmlA.href "https://github.com/Lattyware/massivedecks/wiki/Translation" ] unenhanced ]
-
-        TwitterHandle ->
-            [ Html.blankA [ HtmlA.href "https://twitter.com/Massive_Decks" ] (suffixed unenhanced Icon.twitter) ]
+            [ Html.blankA [ HtmlA.href "https://github.com/Scouting-Jan-de-Rooij/scoutsagainsthumanity-game/wiki/Translation" ] unenhanced ]
 
         Error ->
             prefixed unenhanced Icon.bug

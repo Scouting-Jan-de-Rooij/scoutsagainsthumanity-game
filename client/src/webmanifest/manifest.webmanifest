@@ -1,13 +1,13 @@
 {
-  "name": "Massive Decks",
-  "short_name": "Massive Decks",
+  "name": "Scouts Against Humanity",
+  "short_name": "Scouts Against Humanity",
   "lang": "en",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#cccccc",
   "theme_color": "#42a5f5",
   "orientation": "natural",
-  "description": "A comedy party game.",
+  "description": "A game for terrible scouts.",
   "icons": [
     {
       "src": "../../assets/images/icon.svg",
